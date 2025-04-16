@@ -12,6 +12,11 @@ public class Aluno {
         this.notas = notas;
     }
 
+    public Aluno() {
+
+
+    }
+
     public String getNome() {
         return nome;
     }
@@ -35,13 +40,24 @@ public class Aluno {
 
     public boolean Aprovado (){
 
-        return CalculaMediaNota()>=7;
+        return CalculaMediaNota() >=7;
+
 
 
     }
 
+    public void exibirDados(){
+
+        System.out.println("Nome" + nome);
+        System.out.println("Idade" + idade);
+        System.out.println("Média" + CalculaMediaNota());
+        System.out.println( "Aprovado" +(Aprovado() ? "Sim" : "Não"));
 
 
+
+
+
+    }
 }
 
 
